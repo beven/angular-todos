@@ -1,0 +1,9 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>todos</h1>
+    <form class="todo-form" routerLink="/todolist">
+      <input #todoBox id="todoBox" class="new-todo" placeholder="What needs to be done?" (keypress)="addTask(todoBox.value)" autofocus>
+    </form>
+  </header>
+  <router-outlet></router-outlet>
+</section>
